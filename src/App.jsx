@@ -1,24 +1,43 @@
+import BalancePage from "./Pages/balance";
+import DashboardPage from "./Pages/dashboard";
+import ErrorRoute from "./Pages/errorRoute";
+import ForgotPassword from "./Pages/ForgotPassword";
+import SignInPage from "./Pages/SignIn";
+import SignUpPage from "./Pages/SignUp";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SignInPage from "./pages/signIn";
-import SignUpPage from "./pages/signUp";
-import ErrorRoute from "./pages/errorRoute";
-import DashboardPage from "./pages/dashboard";
+
+
 
 const App = () => {
   const myRouter = createBrowserRouter([
     {
       path: "/",
-      element: <DashboardPage />,
-      errorElement: <ErrorRoute />
+      element: <DashboardPage/>,
+      errorElement: <ErrorRoute/>,
     },
+     
     {
       path: "/login",
-      element: <SignInPage />
+      element: <SignInPage/>
     },
     {
       path: "/register",
-      element: <SignUpPage />
+      element: <SignUpPage/>
     },
+    {
+      path: "/forgot-password",
+      element: <ForgotPassword/>
+    },
+    {
+      path: "/balance",
+      element: <BalancePage/>
+    },
+    {
+      path: "/logout",
+      element: <SignInPage/>
+    }
+
   ]);
 
   return (
