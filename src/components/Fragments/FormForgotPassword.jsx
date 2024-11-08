@@ -22,9 +22,11 @@ const FormForgotPassword = () => {
                         name="email"
                     />
                 </div>
-                <Button variant="bg-primary w-full text-white" type="submit" >
-                    Password Reset
-                </Button>
+                <Link to="/forgotpasswordconfirm">
+                    <Button variant="bg-primary w-full text-white" type="submit" >
+                    Reset Password
+                    </Button>
+                </Link>
             </form>
 
             <div className="text-center mt-6 font-semibold">

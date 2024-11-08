@@ -4,8 +4,9 @@ import ErrorRoute from "./Pages/errorRoute";
 import ForgotPassword from "./Pages/ForgotPassword";
 import SignInPage from "./Pages/SignIn";
 import SignUpPage from "./Pages/SignUp";
-
+import FormForgotPasswordResetConfirmation from "./Pages/PasswordResetConfirmation";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import GoalsPage from "./Pages/GoalsPage";
 
 
 
@@ -36,8 +37,15 @@ const App = () => {
     {
       path: "/logout",
       element: <SignInPage/>
-    }
-
+    },
+    {
+      path: "/forgotpasswordconfirm",
+      element: <FormForgotPasswordResetConfirmation/>
+    },
+    {
+      path: "/goals",
+      element: <GoalsPage/>
+    },
   ]);
 
   return (

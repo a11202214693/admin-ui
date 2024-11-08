@@ -17,8 +17,8 @@ const Navbar = () => {
       label: "Balance",
     },
     {
-      id: "transaction",
-      link: "/transaction",
+      id: "transactions",
+      link: "/transactions",
       icon: <Icon.Transaction />,
       label: "Transactions",
     },

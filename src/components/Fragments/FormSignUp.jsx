@@ -8,7 +8,7 @@ const FormSignUp = () => {
         <LabeledInput
           label="Name"
           type="text"
-          placeholder="John Doe"
+          placeholder="Doe John Lee"
           name="name"
         />
       </div>
@@ -29,7 +29,7 @@ const FormSignUp = () => {
         />
       </div>
       <Button variant="bg-primary w-full text-white" type="submit">
-        Sign Up
+        Create
       </Button>
     </form>
   );
