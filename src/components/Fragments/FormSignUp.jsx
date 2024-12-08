@@ -1,5 +1,5 @@
-import Button from "../Elements/Button/index";
-import LabeledInput from '../Elements/LabeledInput/Index'; 
+import Button from "../Elements/Button";
+import LabeledInput from "../Elements/LabeledInput";
 
 const FormSignUp = () => {
   return (
@@ -8,7 +8,7 @@ const FormSignUp = () => {
         <LabeledInput
           label="Name"
           type="text"
-          placeholder="Doe John Lee"
+          placeholder="John Doe"
           name="name"
         />
       </div>
@@ -29,7 +29,7 @@ const FormSignUp = () => {
         />
       </div>
       <Button variant="bg-primary w-full text-white" type="submit">
-        Create
+        Sign Up
       </Button>
     </form>
   );

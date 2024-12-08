@@ -1,50 +1,43 @@
-import BalancePage from "./Pages/balance";
-import DashboardPage from "./Pages/dashboard";
-import ErrorRoute from "./Pages/errorRoute";
-import ForgotPassword from "./Pages/ForgotPassword";
-import SignInPage from "./Pages/SignIn";
-import SignUpPage from "./Pages/SignUp";
-import FormForgotPasswordResetConfirmation from "./Pages/PasswordResetConfirmation";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import GoalsPage from "./Pages/GoalsPage";
-
-
+import SignInPage from "./pages/signIn";
+import SignUpPage from "./pages/signUp";
+import ErrorRoute from "./pages/errorRoute";
+import ForgotPasswordPage from "./pages/forgotPassword";
+import DashboardPage from "./pages/dashboard";
+import BalancePage from "./pages/balance";
+import GoalPage from "./pages/goal";
+import ExpensePage from "./pages/expense";
 
 const App = () => {
   const myRouter = createBrowserRouter([
     {
       path: "/",
-      element: <DashboardPage/>,
-      errorElement: <ErrorRoute/>,
+      element: <DashboardPage />,
+      errorElement: <ErrorRoute />,
     },
-     
     {
       path: "/login",
-      element: <SignInPage/>
+      element: <SignInPage />,
     },
     {
       path: "/register",
-      element: <SignUpPage/>
+      element: <SignUpPage />,
     },
     {
       path: "/forgot-password",
-      element: <ForgotPassword/>
+      element: <ForgotPasswordPage />,
     },
     {
       path: "/balance",
-      element: <BalancePage/>
+      element: <BalancePage />,
     },
     {
-      path: "/logout",
-      element: <SignInPage/>
+      path: "/goal",
+      element: <GoalPage />,
     },
     {
-      path: "/forgotpasswordconfirm",
-      element: <FormForgotPasswordResetConfirmation/>
-    },
-    {
-      path: "/goals",
-      element: <GoalsPage/>
+      path: "/expense",
+      element: <ExpensePage />,
     },
   ]);
 
